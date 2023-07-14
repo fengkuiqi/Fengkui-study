@@ -31,7 +31,7 @@ def request_post(url, json=None, headers=None):
     return res
 
 
-class Requests():
+class Requests:
     pass
 
     def request_api(self, url, data=None, json=None, headers=None, cookies=None, method=None):
