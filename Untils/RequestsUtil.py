@@ -3,6 +3,7 @@
 # author:  Fengkui
 # Time：2023/7/12
 import requests
+from LoggerUtil import my_log
 
 
 def request_get(url, pars, headers):
@@ -32,8 +33,8 @@ def request_post(url, json=None, headers=None):
 
 
 class Requests:
-    pass
-
+    def __init__(self):
+        self.log = my_log("Requests")
     def request_api(self, url, data=None, json=None, headers=None, cookies=None, method=None):
 
         if method == "get":

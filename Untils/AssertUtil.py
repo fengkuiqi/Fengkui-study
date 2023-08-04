@@ -3,12 +3,12 @@
 # author:  Fengkui
 # Time：2023/7/17
 import json
+from LoggerUtil import my_log
 
 
 class AssertUtil:
     def __init__(self):
-        pass
-
+        self.log = my_log("AssertUtil")
     def assertcode(self, code, expected_code):
         try:
             if int(code) == int(expected_code):
